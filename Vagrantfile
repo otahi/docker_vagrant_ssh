@@ -8,8 +8,6 @@ apt-get update
 apt-get install -y docker.io
 apt-get clean
 docker.io build /vagrant/
-docker.io run -P -d --name src_node
-docker.io run -P -d --name dst_node
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|

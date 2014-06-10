@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER otahi
 
 RUN apt-get update
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-server curl ngrep --no-install-recommends
 RUN apt-get clean
 
 USER root
